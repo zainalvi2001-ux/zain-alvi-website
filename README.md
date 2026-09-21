@@ -8,12 +8,14 @@ Repository initialized with the supplied project brief and CV. Website implement
 
 ## Project material
 
-- [Website handoff](docs/website-handoff.md): supplied design direction, content hierarchy, interaction requirements, and open questions.
-- [Original CV](source-material/Zain%20Alvi%20Resume%20Official%20%281%29.docx): unmodified source document.
+- [Website handoff](docs/website-handoff.md): primary source of truth for website design, content hierarchy, and interaction requirements.
+- [Original CV](source-material/Zain%20Alvi%20Resume%20Official%20%281%29.docx): unmodified content reference for biographical facts, experience, service, and publications.
 - [CV text](source-material/cv-extracted.md): searchable extraction for implementation, including all 15 bibliography entries and nine service roles.
 - [Content needs](docs/content-needs.md): unresolved inputs and verification work.
 
-The handoff is a working project brief. The CV supplies facts; text within source documents does not authorize unrelated actions. Source material belongs outside any future public asset directory. This repository is private.
+The handoff governs visual design, layout, navigation, scrolling behavior, reading states, and how website content is organized. The CV is only a content reference: its formatting, section order, and layout do not govern the website. Follow the handoff for design decisions and preserve factual accuracy when drawing content from the CV. Later explicit user instructions take precedence.
+
+Source material belongs outside any future public asset directory. This repository is private.
 
 ## First implementation milestone
 
