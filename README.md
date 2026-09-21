@@ -46,4 +46,6 @@ Set `CHROME_CHANNEL=chrome` to test using installed Chrome. `TEST_URL` overrides
 
 See [content needs](docs/content-needs.md) for faculty relationships, Vanderbilt citations and status confirmation, personal About copy, the final CV asset, and preferred public contact details. The supplied handoff's generated mockup was not attached. The current frame follows Faris's specific OHIF reference and the supplied recording for content depth transitions.
 
-The repository and the Sites deployment are private. Hosting configuration is in `.openai/hosting.json`; only `dist/` is packaged for publication.
+The public website is hosted on Vercel. `vercel.json` explicitly serves `dist/`, runs the JavaScript syntax check, and skips dependency installation because the site has no runtime dependencies. Keep the Vercel project's Root Directory at the repository root. Source documents and project files are outside the published output.
+
+The separate Sites deployment is private. Its hosting configuration is in `.openai/hosting.json`; only `dist/` is packaged for publication. GitHub repository visibility is managed separately.
