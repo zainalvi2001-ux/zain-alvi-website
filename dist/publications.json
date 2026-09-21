@@ -1,0 +1,1108 @@
+[
+  {
+    "id": "pub-1",
+    "title": "Image quality evaluation of neonatal brain magnetic resonance imaging using a deep learning reconstruction algorithm: A quantitative and multireader study using variable denoising levels at 3 tesla",
+    "authors": [
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Reis",
+        "given": "Eduardo P."
+      },
+      {
+        "family": "Esmeraldo",
+        "given": "Mateus A."
+      },
+      {
+        "family": "Shin",
+        "given": "David"
+      },
+      {
+        "family": "Banerjee",
+        "given": "Suchandrima"
+      },
+      {
+        "family": "Dahmoush",
+        "given": "Hisham M."
+      },
+      {
+        "family": "Campion",
+        "given": "Andrew"
+      },
+      {
+        "family": "Chambers",
+        "given": "Stefanie"
+      },
+      {
+        "family": "Kravutske",
+        "given": "Yanniklas"
+      },
+      {
+        "family": "Gatidis",
+        "given": "Sergios"
+      },
+      {
+        "family": "Soares",
+        "given": "Bruno P."
+      }
+    ],
+    "journal": "Journal of Clinical Imaging Science",
+    "year": 2026,
+    "volume": "16",
+    "issue": "",
+    "pages": "29",
+    "doi": "10.25259/JCIS_32_2026",
+    "url": "https://doi.org/10.25259/JCIS_32_2026",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-2",
+    "title": "Brain Magnetic Resonance Imaging of Neonatal Hypoglycemia: Assessing Injury Extent and Potential Cause",
+    "authors": [
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Dahmoush",
+        "given": "Hisham M."
+      },
+      {
+        "family": "Soares",
+        "given": "Bruno P."
+      }
+    ],
+    "journal": "Neuropediatrics",
+    "year": 2025,
+    "volume": "56",
+    "issue": "01",
+    "pages": "065-066",
+    "doi": "10.1055/s-0044-1788975",
+    "url": "https://doi.org/10.1055/s-0044-1788975",
+    "type": "Case report"
+  },
+  {
+    "id": "pub-3",
+    "title": "N terminal pro-brain natriuretic peptide level and benefits of chronic total occlusion revascularization",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel A."
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik B."
+      },
+      {
+        "family": "Jain",
+        "given": "Vardhmaan"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew E."
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang R."
+      },
+      {
+        "family": "Elhage Hassan",
+        "given": "Malika"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Rahbar",
+        "given": "Alireza"
+      },
+      {
+        "family": "Murtagh",
+        "given": "Gillian"
+      },
+      {
+        "family": "Varounis",
+        "given": "Christos"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam A."
+      },
+      {
+        "family": "Nicholson",
+        "given": "William J."
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "International Journal of Cardiology",
+    "year": 2024,
+    "volume": "409",
+    "issue": "",
+    "pages": "132196",
+    "doi": "10.1016/j.ijcard.2024.132196",
+    "url": "https://doi.org/10.1016/j.ijcard.2024.132196",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-4",
+    "title": "Vitamin D Deficiency, Inflammation, and Diminished Endogenous Regenerative Capacity in Coronary Heart Disease",
+    "authors": [
+      {
+        "family": "Desai",
+        "given": "Shivang R."
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Hafeez",
+        "given": "Zaki"
+      },
+      {
+        "family": "Park",
+        "given": "Jiwon"
+      },
+      {
+        "family": "Faaborg-Andersen",
+        "given": "Christian"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Alras",
+        "given": "Zahran"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman A."
+      },
+      {
+        "family": "Martini",
+        "given": "Afif"
+      },
+      {
+        "family": "Varughese",
+        "given": "Anil"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Cheung",
+        "given": "Brian"
+      },
+      {
+        "family": "Wang",
+        "given": "Maggie"
+      },
+      {
+        "family": "Gold",
+        "given": "Daniel A."
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew E."
+      },
+      {
+        "family": "Jain",
+        "given": "Vardhmaan"
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Islam",
+        "given": "Shabatun J."
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Zakaria"
+      },
+      {
+        "family": "Dhindsa",
+        "given": "Devinder S."
+      },
+      {
+        "family": "Mehta",
+        "given": "Anurag"
+      },
+      {
+        "family": "Kim",
+        "given": "Jonathan H."
+      },
+      {
+        "family": "Wilson",
+        "given": "Peter"
+      },
+      {
+        "family": "Waller",
+        "given": "Edmund K."
+      },
+      {
+        "family": "Vaccarino",
+        "given": "Viola"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "JACC: Advances",
+    "year": 2024,
+    "volume": "3",
+    "issue": "2",
+    "pages": "100804",
+    "doi": "10.1016/j.jacadv.2023.100804",
+    "url": "https://doi.org/10.1016/j.jacadv.2023.100804",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-5",
+    "title": "Long-Term Outcomes in Patients With Chronic Total Occlusion",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel A."
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik B."
+      },
+      {
+        "family": "Jain",
+        "given": "Vardhmaan"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew E."
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang R."
+      },
+      {
+        "family": "Hassan",
+        "given": "Malika Elhage"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam A."
+      },
+      {
+        "family": "Nicholson",
+        "given": "William J."
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "The American Journal of Cardiology",
+    "year": 2024,
+    "volume": "214",
+    "issue": "",
+    "pages": "59-65",
+    "doi": "10.1016/j.amjcard.2023.12.052",
+    "url": "https://doi.org/10.1016/j.amjcard.2023.12.052",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-6",
+    "title": "Soluble urokinase Plasminogen Activator Receptor (suPAR) is associated with educational attainment in patients with coronary artery disease",
+    "authors": [
+      {
+        "family": "Fueller",
+        "given": "D"
+      },
+      {
+        "family": "Liu",
+        "given": "C"
+      },
+      {
+        "family": "Ko",
+        "given": "Y A"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "A"
+      },
+      {
+        "family": "Desai",
+        "given": "S R"
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Z"
+      },
+      {
+        "family": "Patel",
+        "given": "S A"
+      },
+      {
+        "family": "Ejaz",
+        "given": "K"
+      },
+      {
+        "family": "Kauser",
+        "given": "T"
+      },
+      {
+        "family": "Martini",
+        "given": "A"
+      },
+      {
+        "family": "Alvi",
+        "given": "Z"
+      },
+      {
+        "family": "Mehta",
+        "given": "P K"
+      },
+      {
+        "family": "Sperling",
+        "given": "L S"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "A A"
+      }
+    ],
+    "journal": "European Heart Journal",
+    "year": 2023,
+    "volume": "44",
+    "issue": "Supplement_2",
+    "pages": "ehad655.1195",
+    "doi": "10.1093/eurheartj/ehad655.1195",
+    "url": "https://doi.org/10.1093/eurheartj/ehad655.1195",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-7",
+    "title": "High Sensitivity Troponin Level and Benefits of Chronic Total Occlusion Revascularization",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel A."
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik B."
+      },
+      {
+        "family": "Jain",
+        "given": "Vardhmaan"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew E."
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang R."
+      },
+      {
+        "family": "Hassan",
+        "given": "Malika Elhage"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi‐An"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Rahbar",
+        "given": "Alireza"
+      },
+      {
+        "family": "Murtagh",
+        "given": "Gillian"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam A."
+      },
+      {
+        "family": "Nicholson",
+        "given": "William J."
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "Journal of the American Heart Association",
+    "year": 2023,
+    "volume": "12",
+    "issue": "21",
+    "pages": "e031431",
+    "doi": "10.1161/JAHA.123.031431",
+    "url": "https://doi.org/10.1161/JAHA.123.031431",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-8",
+    "title": "Abstract 13874: N Terminal Pro-Brain Natriuretic Peptide Levels and Benefits of Chronic Total Occlusion Revascularization",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel A"
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik B"
+      },
+      {
+        "family": "Jain",
+        "given": "Vardhmaan"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew E"
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Elhage Hassan",
+        "given": "Malika"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain N"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Rahbar",
+        "given": "Alireza"
+      },
+      {
+        "family": "Murtagh",
+        "given": "Gillian"
+      },
+      {
+        "family": "Varounis",
+        "given": "Christos"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam"
+      },
+      {
+        "family": "Nicholson",
+        "given": "William"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A"
+      }
+    ],
+    "journal": "Circulation",
+    "year": 2023,
+    "volume": "148",
+    "issue": "Suppl_1",
+    "pages": "",
+    "doi": "10.1161/circ.148.suppl_1.13874",
+    "url": "https://doi.org/10.1161/circ.148.suppl_1.13874",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-9",
+    "title": "High sensitivity troponin I as a biomarker for cardiac allograft vasculopathy: Evaluation of diagnostic potential and clinical utility",
+    "authors": [
+      {
+        "family": "Patel",
+        "given": "Krishan"
+      },
+      {
+        "family": "Yadalam",
+        "given": "Adithya"
+      },
+      {
+        "family": "DeStefano",
+        "given": "Robert"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Zakaria"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi‐An"
+      },
+      {
+        "family": "Alras",
+        "given": "Zahran"
+      },
+      {
+        "family": "Martini",
+        "given": "Mohamed Afif"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Varounis",
+        "given": "Christos"
+      },
+      {
+        "family": "Murtagh",
+        "given": "Gillian"
+      },
+      {
+        "family": "Gupta",
+        "given": "Divya"
+      },
+      {
+        "family": "Book",
+        "given": "Wendy"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "Clinical Transplantation",
+    "year": 2024,
+    "volume": "38",
+    "issue": "1",
+    "pages": "e15168",
+    "doi": "10.1111/ctr.15168",
+    "url": "https://doi.org/10.1111/ctr.15168",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-10",
+    "title": "Soluble urokinase Plasminogen Activator Receptor (suPAR) mediates the effect of a lower education level on adverse outcomes in patients with coronary artery disease",
+    "authors": [
+      {
+        "family": "Füller",
+        "given": "David"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman A"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang R"
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Zakaria"
+      },
+      {
+        "family": "Patel",
+        "given": "Shivani A"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Kauser",
+        "given": "Tanveer"
+      },
+      {
+        "family": "Martini",
+        "given": "Mohamed Afif"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Mehta",
+        "given": "Puja K"
+      },
+      {
+        "family": "Sperling",
+        "given": "Laurence S"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A"
+      }
+    ],
+    "journal": "European Journal of Preventive Cardiology",
+    "year": 2024,
+    "volume": "31",
+    "issue": "5",
+    "pages": "521-528",
+    "doi": "10.1093/eurjpc/zwad311",
+    "url": "https://doi.org/10.1093/eurjpc/zwad311",
+    "type": "Journal article"
+  },
+  {
+    "id": "pub-11",
+    "title": "TCT-118 Long-Term Outcomes in Patients With Chronic Total Occlusion",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel"
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew"
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Hassan",
+        "given": "Malika Elhage"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam"
+      },
+      {
+        "family": "Nicholson",
+        "given": "William"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed"
+      }
+    ],
+    "journal": "Journal of the American College of Cardiology",
+    "year": 2023,
+    "volume": "82",
+    "issue": "17",
+    "pages": "B46-B47",
+    "doi": "10.1016/j.jacc.2023.09.124",
+    "url": "https://doi.org/10.1016/j.jacc.2023.09.124",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-12",
+    "title": "TCT-119 High-Sensitivity Troponin Level and Benefits of Chronic Total Occlusion Revascularization",
+    "authors": [
+      {
+        "family": "Gold",
+        "given": "Daniel"
+      },
+      {
+        "family": "Sandesara",
+        "given": "Pratik"
+      },
+      {
+        "family": "Gold",
+        "given": "Matthew"
+      },
+      {
+        "family": "Vatsa",
+        "given": "Nishant"
+      },
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Hassan",
+        "given": "Malika Elhage"
+      },
+      {
+        "family": "Yuan",
+        "given": "Chenyang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Rahbar",
+        "given": "Alireza"
+      },
+      {
+        "family": "Murtagh",
+        "given": "Gillian"
+      },
+      {
+        "family": "Jaber",
+        "given": "Wissam"
+      },
+      {
+        "family": "Nicholson",
+        "given": "William"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed"
+      }
+    ],
+    "journal": "Journal of the American College of Cardiology",
+    "year": 2023,
+    "volume": "82",
+    "issue": "17",
+    "pages": "B47",
+    "doi": "10.1016/j.jacc.2023.09.125",
+    "url": "https://doi.org/10.1016/j.jacc.2023.09.125",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-13",
+    "title": "(44) Lipoprotein(a) Levels Predict Development of Cardiac Allograft Vasculopathy",
+    "authors": [
+      {
+        "family": "Patel",
+        "given": "K."
+      },
+      {
+        "family": "Yadalam",
+        "given": "A."
+      },
+      {
+        "family": "DeStefano",
+        "given": "R."
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Z."
+      },
+      {
+        "family": "Desai",
+        "given": "S."
+      },
+      {
+        "family": "Alkhoder",
+        "given": "A."
+      },
+      {
+        "family": "Ejaz",
+        "given": "K."
+      },
+      {
+        "family": "Alvi",
+        "given": "Z."
+      },
+      {
+        "family": "Book",
+        "given": "W."
+      },
+      {
+        "family": "Gupta",
+        "given": "D."
+      },
+      {
+        "family": "Quyyumi",
+        "given": "A.A."
+      }
+    ],
+    "journal": "The Journal of Heart and Lung Transplantation",
+    "year": 2023,
+    "volume": "42",
+    "issue": "4",
+    "pages": "S29",
+    "doi": "10.1016/j.healun.2023.02.060",
+    "url": "https://doi.org/10.1016/j.healun.2023.02.060",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-14",
+    "title": "C-PEPTIDE CORRELATES WITH ADVERSE EVENTS IN A DIVERSE, HIGH-RISK CORONARY ARTERY DISEASE COHORT",
+    "authors": [
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Behbahani-Nejad",
+        "given": "Omid"
+      },
+      {
+        "family": "Dicken",
+        "given": "Frank"
+      },
+      {
+        "family": "Park",
+        "given": "Jiwon"
+      },
+      {
+        "family": "Beydoun",
+        "given": "Nour"
+      },
+      {
+        "family": "Alras",
+        "given": "Zahran"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Faridizad",
+        "given": "Romina"
+      },
+      {
+        "family": "Kauser",
+        "given": "Tanveer"
+      },
+      {
+        "family": "Martini",
+        "given": "Mohamed Afif"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "Journal of the American College of Cardiology",
+    "year": 2023,
+    "volume": "81",
+    "issue": "8",
+    "pages": "1217",
+    "doi": "10.1016/S0735-1097(23)01661-3",
+    "url": "https://doi.org/10.1016/S0735-1097(23)01661-3",
+    "type": "Conference abstract"
+  },
+  {
+    "id": "pub-15",
+    "title": "VITAMIN D DEFICIENCY AND DIMINISHED ENDOGENOUS REGENERATIVE CAPACITY: A SYNERGISTIC RELATIONSHIP",
+    "authors": [
+      {
+        "family": "Desai",
+        "given": "Shivang"
+      },
+      {
+        "family": "Ko",
+        "given": "Yi-An"
+      },
+      {
+        "family": "Liu",
+        "given": "Chang"
+      },
+      {
+        "family": "Alras",
+        "given": "Zahran"
+      },
+      {
+        "family": "Alkhoder",
+        "given": "Ayman"
+      },
+      {
+        "family": "Martini",
+        "given": "Mohamed Afif"
+      },
+      {
+        "family": "Alvi",
+        "given": "Zain"
+      },
+      {
+        "family": "Faridizad",
+        "given": "Romina"
+      },
+      {
+        "family": "Kauser",
+        "given": "Tanveer"
+      },
+      {
+        "family": "Ejaz",
+        "given": "Kiran"
+      },
+      {
+        "family": "Beydoun",
+        "given": "Nour"
+      },
+      {
+        "family": "Islam",
+        "given": "Shabatun"
+      },
+      {
+        "family": "Almuwaqqat",
+        "given": "Zakaria"
+      },
+      {
+        "family": "Mehta",
+        "given": "Anurag"
+      },
+      {
+        "family": "Waller",
+        "given": "Edmund K."
+      },
+      {
+        "family": "Quyyumi",
+        "given": "Arshed A."
+      }
+    ],
+    "journal": "Journal of the American College of Cardiology",
+    "year": 2023,
+    "volume": "81",
+    "issue": "8",
+    "pages": "1116",
+    "doi": "10.1016/S0735-1097(23)01560-7",
+    "url": "https://doi.org/10.1016/S0735-1097(23)01560-7",
+    "type": "Conference abstract"
+  }
+]

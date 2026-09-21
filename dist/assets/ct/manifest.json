@@ -1,0 +1,483 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/Category:Computed_tomography_images_of_Mikael_H%C3%A4ggstr%C3%B6m%27s_brain",
+  "creator": "Department of Radiology, Uppsala University Hospital. Uploaded by Mikael Häggström.",
+  "order": "Ascending slice number, skull base to crown. Source orientation and framing preserved.",
+  "files": [
+    {
+      "index": 1,
+      "filename": "slice-01.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(1).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Computed_tomography_of_human_brain_%281%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "a84b7194dd6fac0d42d23c62f1444f5624d31e5202f7f170264ff52b4add09ee",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "5a279f4ac55c245b99ab18b82f7de37076840928"
+    },
+    {
+      "index": 2,
+      "filename": "slice-02.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(2).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Computed_tomography_of_human_brain_%282%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "a2441eb887a4e37ff03baed331735172a506f54515e55d691ba2e169130214af",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c4da48b070b37ee65960f7131d5fb2d616286a62"
+    },
+    {
+      "index": 3,
+      "filename": "slice-03.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(3).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Computed_tomography_of_human_brain_%283%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "9353155e1b37f35ba1615a16d08d47e21bc1a6011b796cf37fb0e90f8aff165f",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "61b2ecec90ca60436f768f70a3529b66b1da107e"
+    },
+    {
+      "index": 4,
+      "filename": "slice-04.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(4).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Computed_tomography_of_human_brain_%284%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "a1b3d6be1a961442bfc9ec1ae35c6e87b950616424feb11750bd781879b4c683",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "ce137a7f02af588e96fb8511cd16b4b83bae9a5c"
+    },
+    {
+      "index": 5,
+      "filename": "slice-05.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(5).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Computed_tomography_of_human_brain_%285%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "a6dc687c711dd206de96b3c6331258d6554b988badf3e60eede1148c53482d2f",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "43f3988ee01bfd2888403b7e848a1cfbc65c2167"
+    },
+    {
+      "index": 6,
+      "filename": "slice-06.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(6).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Computed_tomography_of_human_brain_%286%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "cb035badc8f11582c8e0cb32253ec8d2fad3da9d1dae908ec96ddcc7888ae182",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "6850009d13f31f5dc123cc02b613932e4ed9e01e"
+    },
+    {
+      "index": 7,
+      "filename": "slice-07.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(7).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Computed_tomography_of_human_brain_%287%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "0c19a7a6baf456dce817174076ea50d5b4f8556f59cce8a98a8142cb5147ccee",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "d754dae1ec9cb42c15df221fc8b2be00819ed2c9"
+    },
+    {
+      "index": 8,
+      "filename": "slice-08.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(8).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Computed_tomography_of_human_brain_%288%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "e43801cd9536c1e9f2f4f6247bdc75244669b333a641a137742634fd5190df4d",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "71cf94c7847557db9e7fb8e7eb8901cb692a13e3"
+    },
+    {
+      "index": 9,
+      "filename": "slice-09.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(9).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Computed_tomography_of_human_brain_%289%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "13e1a36eb5cf0a788bbf5563a45c3681eca4887877cb33ed7af27400b1406ec3",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "924b6830dd94e5c7b4cbe52d199c796c2179c07e"
+    },
+    {
+      "index": 10,
+      "filename": "slice-10.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(10).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Computed_tomography_of_human_brain_%2810%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "f67166bf0912f2f0034ecb0c7c2bee491121cba214f40869e8b036a621212073",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "972f01dd498fc200bd5145d6110b8790d9602c30"
+    },
+    {
+      "index": 11,
+      "filename": "slice-11.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(11).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Computed_tomography_of_human_brain_%2811%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "dd3991478ee899ee88730a16d48f174b944685715e298796f1237aabb0b407b7",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "b6870bce52475df7639b01e5174ae41be9983251"
+    },
+    {
+      "index": 12,
+      "filename": "slice-12.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(12).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Computed_tomography_of_human_brain_%2812%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "c947b815d1bbfe414134413623364ac1f767085f13e9ce5092c15c0631752dba",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "9bc7e5f97e368fbaaa31accdbd3d0cda21c0b866"
+    },
+    {
+      "index": 13,
+      "filename": "slice-13.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(13).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Computed_tomography_of_human_brain_%2813%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "bf257e2bff258867476590e11ee25f6b9d5ffc3c2fc5b62257317bbf57ce18a0",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "5cd0f2e141b29174220ad59b2594064096d58b65"
+    },
+    {
+      "index": 14,
+      "filename": "slice-14.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(14).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Computed_tomography_of_human_brain_%2814%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "1a4f4339d31a957d9cede857b64f5a52134160e430c3028ea43962ec1db24ef5",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "8a261b75c2495840bf2eef396e155c76c3ddf635"
+    },
+    {
+      "index": 15,
+      "filename": "slice-15.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(15).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Computed_tomography_of_human_brain_%2815%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "d6a6f6ee1ad3a30930ddd08392875bb3d83fc6d98127dec9bc9950b5cec1c9fd",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "6b598e698c6838566491485faaa17952ae7cf86a"
+    },
+    {
+      "index": 16,
+      "filename": "slice-16.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(16).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Computed_tomography_of_human_brain_%2816%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "ddb48517557493aa01d84c0c1eefa929c84bfeaffbca865c14f7498561f11ef2",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c4fbb17bd95c838ee1df1a83f41c681ccf3dee55"
+    },
+    {
+      "index": 17,
+      "filename": "slice-17.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(17).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Computed_tomography_of_human_brain_%2817%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "ad774e554fbcec1d4b1637663344dfa3541fa6a309e88e876725a2e75a23c510",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "e589f1adc110f9851721a6bcfa88f62c5b2c1c5e"
+    },
+    {
+      "index": 18,
+      "filename": "slice-18.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(18).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Computed_tomography_of_human_brain_%2818%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "02e84221bb2c983043e85a6a6f8cad2d713bae362f54b879f6a551898e163ace",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "5a24d8589037730bfb275e6d0d2dde11ce3103fe"
+    },
+    {
+      "index": 19,
+      "filename": "slice-19.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(19).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Computed_tomography_of_human_brain_%2819%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "69370a974cdefa76656af7d744bb0163090df09b657aa1156121a6bff845bfd4",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "428b3418d74008739734d9c955c71d110820f2b8"
+    },
+    {
+      "index": 20,
+      "filename": "slice-20.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(20).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Computed_tomography_of_human_brain_%2820%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "b4c58d7769f44d0944b06e68dfde7bb0f96c09472b402ff74ab5c47167e98eeb",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "73cf2496367e5ca380b72c659619ac9489709930"
+    },
+    {
+      "index": 21,
+      "filename": "slice-21.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(21).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Computed_tomography_of_human_brain_%2821%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "217bc2762024efa4392610ca8c4f96854d014c4654366e2ae4d8c0b022360eeb",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "cc4a696a0cca6af1f5b7f669dcb2019bba1e4707"
+    },
+    {
+      "index": 22,
+      "filename": "slice-22.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(22).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Computed_tomography_of_human_brain_%2822%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "dfa8aefc114dabf79aacd0ee2b7d0c594753cf3c190b606dc33fce9a03df16c1",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c5dd4f94b59a91aa4d3e6e0f8491a93cd229acb1"
+    },
+    {
+      "index": 23,
+      "filename": "slice-23.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(23).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Computed_tomography_of_human_brain_%2823%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "43af5b36da5b3c7c00db2de228d9c88e3f4d0ab616116032967f12e22f67618c",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "156853a9776fa041e643e1f1257875a4c47170cd"
+    },
+    {
+      "index": 24,
+      "filename": "slice-24.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(24).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Computed_tomography_of_human_brain_%2824%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "ec6c6465635a79dbe702dc7a645f76d440695abec0c4b476fe42c4e375b2ccbe",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "d0158bafd96666dd7cc5ed6067b21ddfc239f961"
+    },
+    {
+      "index": 25,
+      "filename": "slice-25.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(25).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Computed_tomography_of_human_brain_%2825%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "70ccfd7a6ec496c7e817c7622d60695a8cb37c0948607cd588c3ddd701370604",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "fd7df9615b0c7fe97e730aead584cff75038943b"
+    },
+    {
+      "index": 26,
+      "filename": "slice-26.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(26).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Computed_tomography_of_human_brain_%2826%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "22ff0aa76f2ba8d9be2e8f5ce0dfb14d3b8f40114ac4a08542620541fed0db2f",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "7eaed25db1b2c2b507a6b1192a8151a4cf1fd1b4"
+    },
+    {
+      "index": 27,
+      "filename": "slice-27.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(27).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Computed_tomography_of_human_brain_%2827%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "20ad2166fc7f5df593b217b7351b936ec9b41514b626ee50cd51c39ad3bce9fa",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c1b7a836914c61d1fed42e69b741cd66441e3745"
+    },
+    {
+      "index": 28,
+      "filename": "slice-28.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(28).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Computed_tomography_of_human_brain_%2828%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "4eb7dbadf6e3d9525cf98ac1663b7e59dbae4bb4e4c0ea71781f9b7d8b7d809c",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "804104788d366dfa506c7342eea162c11358e7fe"
+    },
+    {
+      "index": 29,
+      "filename": "slice-29.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(29).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Computed_tomography_of_human_brain_%2829%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "116af8f5e9b6943113999db2269fcbcaea1fd7bda302704f9e87e75201453909",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "3979f034068703eb8bb620a5f622b679764b10e4"
+    },
+    {
+      "index": 30,
+      "filename": "slice-30.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(30).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Computed_tomography_of_human_brain_%2830%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "52101ab619f8b4a8d56f86782fba6754352e31278bcbd3bf324da86a42a34113",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "a2aa302ba366b9e2ecd4f483df2b5eb0b760e39b"
+    },
+    {
+      "index": 31,
+      "filename": "slice-31.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(31).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Computed_tomography_of_human_brain_%2831%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "c9d3b57f754f04d3f4dee4b32ac868dee4471d21b73a9c57ad8aba9f5d3371bd",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c803d305fbb8f389d45f4df403f192fbb809f731"
+    },
+    {
+      "index": 32,
+      "filename": "slice-32.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(32).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Computed_tomography_of_human_brain_%2832%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "1a2b7d56dbe79cb102a99a65a3a0d99dfe6b4c8818fa41bfdef923804953c2ae",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "28c80b47a4bd82b33d244d33067948d6f24e91f1"
+    },
+    {
+      "index": 33,
+      "filename": "slice-33.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(33).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Computed_tomography_of_human_brain_%2833%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "49c65c311155b6a171ccd2ce70fc6841651ba4e9be96577c935dbd768754b121",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "c4b7faffb5354dcabfff1817bb8b82af5cec8d5e"
+    },
+    {
+      "index": 34,
+      "filename": "slice-34.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_(34).png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Computed_tomography_of_human_brain_%2834%29.png",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "80ff1f7316f39f573ec166b8981c92d0580184a9387e36f4ea4ebfc177d8bb70",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "commons_sha1": "ae8915555216a48bc06043ed1be1c33d114c8431"
+    }
+  ]
+}

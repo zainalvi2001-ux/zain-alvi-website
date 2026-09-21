@@ -2,6 +2,12 @@
 
 Working draft for a personal website supporting Zain Alvi’s radiology residency applications. Establish a convincing brain CT scrolling experience while making his research, work experience, and publications easy to review.
 
+## Design refinement from Faris, September 21, 2026
+
+Use the [specific OHIF study viewer](https://viewer.ohif.org/viewer?StudyInstanceUIDs=2.16.840.1.114362.1.11972228.22789312658.616067305.306.2) as the direct frame reference. The first draft felt too much like a generic portfolio. Favor the actual imaging application: compact navy toolbar, study browser at left, restrained controls, corner metadata, and an almost edge-to-edge black viewport. Put Zain Alvi in the brand and patient-style identity positions. The experience is a visual metaphor for looking into who Zain is; the image credits should continue identifying the external reference CT.
+
+Keep the frame fixed as scrolling travels through content depth. The outgoing content should recede and fade fully away, then the next content should fade forward. Do not animate the content vertically or overlap readable text layers. Use the supplied September 21 screen recording as a motion reference. Preserve a fully readable reduced-motion presentation.
+
 ## References and source material
 
 - Interface: [OHIF](https://viewer.ohif.org/). Borrow its simplicity, dark navy panels, black viewport, and blue selection states.
