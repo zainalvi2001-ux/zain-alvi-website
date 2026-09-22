@@ -6,3 +6,5 @@ test('every change fades completely out before the next layer appears',()=>{for(
 test('forward and backward traversal use identical positions and no accumulated state',()=>{const positions=Array.from({length:331},(_,i)=>i/10);const forward=positions.map(p=>depthAt(p));const backward=positions.toReversed().map(p=>depthAt(p)).reverse();assert.deepEqual(forward,backward);for(const v of forward)assert.ok(v.opacity>=0&&v.opacity<=1&&v.depth<=0)});
 test('reduced motion keeps text readable and removes depth travel',()=>{for(let p=0;p<=33;p+=.125){const v=depthAt(p,true);assert.equal(v.opacity,1);assert.equal(v.depth,0)}});
 test('position boundaries remain within the actual image sequence',()=>{assert.equal(clampPosition(-5),0);assert.equal(clampPosition(100),33);assert.equal(sceneAt(33).section,'about')});
+
+test('the opening scene introduces Zain before research begins',()=>{assert.equal(scenes[0].section,'intro');assert.equal(sceneAt(12).section,'intro');assert.equal(sceneAt(14).key,'research-0');assert.deepEqual(scenes.filter(s=>s.section==='research').map(s=>s.experience),[0,1,2])});

@@ -13,3 +13,6 @@ dialog{background:#0a142a;border-color:#34527f;border-radius:3px}.reader-header{
 @media print{html,body{overflow:visible;height:auto;background:#fff;color:#111}.app-toolbar,.workspace,.skip-link,.reader-header,.reader-footer,.print-button,.no-script{display:none!important}dialog,dialog[open]{position:static;display:block!important;max-height:none;width:auto;overflow:visible;border:0;box-shadow:none;background:#fff;color:#111;margin:0}dialog::backdrop{display:none}.reader-body{overflow:visible;padding:0;font-size:10pt}.reader-body p,.reader-body ul,.publication .authors,.publication strong,.reader-body .meta,.reader-body a,.reader-body .lead,.publication .citation,.reader-body li{color:#222}.reader-body h3{break-after:avoid}.publication,.service-item{break-inside:avoid}.reader-body section+section{margin-top:20px;padding-top:15px}.publication{padding:15px 0}.reader-body .pub-type{color:#444}}
 .research-series[hidden]{display:none}
 .viewer-workspace{grid-column:2}
+
+.content.intro h1{font-size:clamp(34px,3.5vw,52px);line-height:1.12;margin-bottom:24px;letter-spacing:-1px}.content.intro .description{font-size:17px;line-height:1.7;margin-bottom:0}
+@media(max-width:760px){.content.intro h1{font-size:34px;margin-bottom:18px}.content.intro .description{font-size:16px;line-height:1.65}}

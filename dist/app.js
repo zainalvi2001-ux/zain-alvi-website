@@ -1,10 +1,10 @@
 import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,educationHtml,cvHtml} from './content.js?v=2';
-import {scenes,clampPosition,sceneAt,depthAt} from './navigation.js?v=2';
+import {scenes,clampPosition,sceneAt,depthAt} from './navigation.js?v=3';
 const $=s=>document.querySelector(s);
 const reader=$('#reader'),thumbs=$('#thumbnails'),content=$('#content');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-const sectionLabels={research:'Research & experience',publications:'Publications',community:'Community service',about:'About'};
-let position=12,target=12,slice=-1,stateKey='',currentSection='research',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null;
+const sectionLabels={intro:'Introduction',research:'Research & experience',publications:'Publications',community:'Community service',about:'About'};
+let position=12,target=12,slice=-1,stateKey='',currentSection='intro',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null;
 const publicationReady=fetch('publications.json').then(r=>{if(!r.ok)throw Error('Bibliography unavailable');return r.json()}).then(data=>publications=data);
 publicationReady.catch(()=>{});
 const urlFor=i=>`assets/ct/slice-${String(i+1).padStart(2,'0')}.png`;
@@ -25,7 +25,7 @@ function updateView({updateHash=true}={}){
  currentSection=scene.section;experienceIndex=scene.experience??experienceIndex;
  if(stateKey!==scene.key){
   stateKey=scene.key;renderContent();$('#section-label').textContent=sectionLabels[currentSection];$('#series-label').textContent=scene.label;
-  $('#chapter-count').textContent=currentSection==='research'?`Research ${experienceIndex+1}/3`:currentSection==='publications'?'15 bibliography entries':currentSection==='community'?'9 service roles':'Class of 2027';
+  $('#chapter-count').textContent=currentSection==='intro'?'Introduction':currentSection==='research'?`Research ${experienceIndex+1}/3`:currentSection==='publications'?'15 bibliography entries':currentSection==='community'?'9 service roles':'Class of 2027';
   $('#section-status').textContent=currentSection==='research'?experiences[experienceIndex].institution:sectionLabels[currentSection];
   document.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===currentSection)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   document.querySelectorAll('[data-experience]').forEach(b=>b.setAttribute('aria-pressed',String(currentSection==='research'&&Number(b.dataset.experience)===experienceIndex)));
@@ -57,7 +57,9 @@ function jumpTo(scene){
 function navigateSection(id){const scene=scenes.find(s=>s.section===id);if(scene)jumpTo(scene)}
 function renderContent(){
  let html='';
- if(currentSection==='research'){
+ if(currentSection==='intro'){
+  html=`<h1 id="content-title">Hi, I'm Zain.</h1><p class="description">I'm a medical student with a background in imaging research and an interest in the evolving role of technology in medicine.</p>`;
+ }else if(currentSection==='research'){
   const e=experiences[experienceIndex];
   html=`<p class="eyebrow">Research intern <span class="date">${e.shortDates}</span></p><h1 id="content-title">${e.display}</h1><p class="department">${e.department}</p><p class="description">${e.description}</p><button class="primary-button" data-open="experience">Read experience <span aria-hidden="true">↗</span></button><div class="content-foot"><span class="mono">0${experienceIndex+1} / 03</span><span>Research & experience</span></div>`;
  }else if(currentSection==='publications'){
@@ -67,17 +69,18 @@ function renderContent(){
  }else{
   html=`<p class="eyebrow">About</p><h1 id="content-title">Zain Alvi</h1><p class="department">MD candidate · Class of 2027</p><p class="description">Medical student at Meharry Medical College, with research experience in radiology and cardiovascular medicine. BS in Biology from New York Institute of Technology.</p><button class="primary-button" data-open="about">Background & education <span aria-hidden="true">↗</span></button><div class="content-foot"><span>English · Urdu · Sindhi</span></div>`;
  }
+ content.classList.toggle('intro',currentSection==='intro');
  content.innerHTML=html;content.scrollTop=0;
 }
 function closeSidebar(){$('.workspace').classList.remove('mobile-sidebar-open');$('#toggle-sidebar').setAttribute('aria-expanded','false')}
 function toggleSidebar(){const workspace=$('.workspace');if(innerWidth<=760){const open=workspace.classList.toggle('mobile-sidebar-open');$('#toggle-sidebar').setAttribute('aria-expanded',String(open))}else{const collapsed=workspace.classList.toggle('sidebar-collapsed');$('#toggle-sidebar').setAttribute('aria-expanded',String(!collapsed))}}
 $('#toggle-sidebar').onclick=toggleSidebar;$('#collapse-sidebar').onclick=()=>innerWidth<=760?closeSidebar():toggleSidebar();
-$('#read-current').onclick=e=>openReader(currentSection==='research'?'experience':currentSection,e.currentTarget);
+$('#read-current').onclick=e=>openReader(currentSection==='research'?'experience':currentSection==='intro'?'about':currentSection,e.currentTarget);
 $('#reset-view').onclick=()=>jumpTo(scenes[0]);$('#explore-tool').onclick=()=>{if(reader.open)reader.close();content.focus({preventScroll:true})};
 if(innerWidth<=760)$('#toggle-sidebar').setAttribute('aria-expanded','false');
 document.addEventListener('click',e=>{
  const section=e.target.closest('[data-section]');if(section){e.preventDefault();navigateSection(section.dataset.section);return}
- const experience=e.target.closest('[data-experience]');if(experience){jumpTo(scenes[Number(experience.dataset.experience)]);return}
+ const experience=e.target.closest('[data-experience]');if(experience){jumpTo(scenes.find(s=>s.experience===Number(experience.dataset.experience)));return}
  const button=e.target.closest('[data-open]');if(button){openReader(button.dataset.open,button);return}
  const publication=e.target.closest('[data-publication]');if(publication)openReader('publications',publication,publication.dataset.publication);
  if(e.target.closest('[data-print]'))window.print();
@@ -127,7 +130,7 @@ $('.scan-figure').addEventListener('touchmove',e=>{if(!touch||reader.open)return
 $('.scan-figure').addEventListener('touchend',()=>{touch=null},{passive:true});
 $('#scan').onerror=()=>{$('#image-error').hidden=false};$('#scan').onload=()=>{$('#image-error').hidden=true};$('#retry-image').onclick=()=>{$('#scan').src=urlFor(slice)+`?retry=${Date.now()}`};
 window.addEventListener('hashchange',()=>navigateSection(location.hash.slice(1)));
-$('.identity').addEventListener('click',e=>{e.preventDefault();navigateSection('research')});
+$('.identity').addEventListener('click',e=>{e.preventDefault();navigateSection('intro')});
 reducedMotion.addEventListener('change',()=>{freezeExploration();position=Math.round(position);target=position;updateView()});
-const initial=scenes.find(s=>`#${s.section}`===location.hash);position=target=initial?.anchor??12;updateView();
+const initial=scenes.find(s=>`#${s.section}`===location.hash);position=target=initial?.anchor??scenes[0].anchor;updateView();
 for(let i=0;i<34;i++){const img=new Image();img.src=urlFor(i)}

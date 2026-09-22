@@ -2,9 +2,9 @@
 
 Built from the design handoff on 2026-09-21. The supplied generated mockup was not attached. Faris subsequently provided a specific OHIF study URL and a screen recording, which govern the revised application frame and depth transitions.
 
-The viewport stays fixed on desktop. A continuous exploration position drives the image, active thumbnail, position marker, section, and research entry. The first view opens at slice 13, with earlier slices reachable by scrolling backward. The source sequence progresses from skull base to crown with no cropping, mirroring, morphing, or scale changes between images.
+The viewport stays fixed on desktop. A continuous exploration position drives the image, active thumbnail, position marker, section, and research entry. The first view introduces Zain with the greeting supplied on September 22 and opens at slice 13, with earlier slices reachable by scrolling backward. The source sequence progresses from skull base to crown with no cropping, mirroring, morphing, or scale changes between images.
 
-The section boundaries are presentation choices: research occupies slices 1–21, publications 22–26, community service 27–31, and About 32–34. No anatomical relationship is implied. Research is divided into Vanderbilt, Stanford, and Emory states. Reference imagery is credited separately from Zain's portfolio.
+The section boundaries are presentation choices: the introduction occupies slices 1–14, research 15–23, publications 24–27, community service 28–31, and About 32–34. No anatomical relationship is implied. Research is divided into Vanderbilt, Stanford, and Emory states. Reference imagery is credited separately from Zain's portfolio.
 
 Reading panels use a native modal dialog. The underlying scan state is held until close, panel scrolling remains independent, Escape closes the panel, and focus returns to the opener. Research publication links target the same complete bibliography records.
 
