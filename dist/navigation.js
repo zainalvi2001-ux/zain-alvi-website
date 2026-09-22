@@ -18,3 +18,10 @@ export function depthAt(position,reducedMotion=false){
  else if(scene.end<33&&position>scene.end-.5){opacity=1-smooth((position-(scene.end-.5))/.5);depth=-150*(1-opacity)}
  return {scene,opacity,depth};
 }
+
+// Finish a partial transition in the direction the visitor was travelling.
+export function settledPosition(position,direction=1){
+ const p=clampPosition(position);
+ const boundary=scenes.slice(0,-1).find(s=>Math.abs(p-s.end)<.5);
+ return boundary?boundary.end+(direction<0?-.5:.5):p;
+}

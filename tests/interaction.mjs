@@ -6,12 +6,12 @@ const errors=[];page.on('pageerror',e=>errors.push(e.message));
 const base=process.env.TEST_URL||'http://127.0.0.1:4173';
 const count=()=>page.locator('#slice-count').innerText();
 const waitPosition=async n=>page.waitForFunction(n=>Math.abs(Number(document.querySelector('#scan-slider').value)-n)<.01,n);
-const checkHeading=async text=>assert.match(await page.locator('#content-title').innerText(),text);
+const checkHeading=async text=>page.waitForFunction(([source,flags])=>new RegExp(source,flags).test(document.querySelector('#content-title')?.textContent||''),[text.source,text.flags]);
 try{
  await page.goto(base);await checkHeading(/Hi, I'm Zain/);
  assert.match(await count(),/13/);
- await page.mouse.move(950,450);await page.mouse.wheel(0,180);await waitPosition(13);assert.match(await count(),/14/);
- await page.mouse.wheel(0,-180);await waitPosition(12);assert.match(await count(),/13/);
+ await page.mouse.move(950,450);await page.mouse.wheel(0,240);await waitPosition(13);assert.match(await count(),/14/);
+ await page.mouse.wheel(0,-240);await waitPosition(12);assert.match(await count(),/13/);
  await page.keyboard.press('ArrowRight');await waitPosition(13);assert.match(await count(),/14/);
  await page.keyboard.press('ArrowRight');await waitPosition(14);await checkHeading(/Vanderbilt/);
  await page.keyboard.press('ArrowLeft');await waitPosition(13);await checkHeading(/Hi, I'm Zain/);

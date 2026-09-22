@@ -2,6 +2,10 @@
 
 Working draft for a personal website supporting Zain Alvi’s radiology residency applications. Establish a convincing brain CT scrolling experience while making his research, work experience, and publications easy to review.
 
+## Final QA direction from Faris, September 22, 2026
+
+Make the existing site more visually appealing and readable, with restrained controls and smooth transitions. Preserve the OHIF reference, exact introduction, complete content, and removal of decorative diagonal arrows. Favor clear typography, quieter repeated metadata, and readable resting states after each transition.
+
 ## Control styling refinement from Faris, September 22, 2026
 
 Remove the repeated diagonal arrow decoration from text links and action buttons. Use the text and existing underline treatment to identify those actions.

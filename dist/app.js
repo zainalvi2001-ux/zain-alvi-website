@@ -1,10 +1,10 @@
-import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,educationHtml,cvHtml} from './content.js?v=2';
-import {scenes,clampPosition,sceneAt,depthAt} from './navigation.js?v=3';
+import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,educationHtml,cvHtml} from './content.js?v=3';
+import {scenes,clampPosition,depthAt,settledPosition} from './navigation.js?v=4';
 const $=s=>document.querySelector(s);
 const reader=$('#reader'),thumbs=$('#thumbnails'),content=$('#content');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const sectionLabels={intro:'Introduction',research:'Research & experience',publications:'Publications',community:'Community service',about:'About'};
-let position=12,target=12,slice=-1,stateKey='',currentSection='intro',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null;
+let position=12,target=12,slice=-1,stateKey='',currentSection='intro',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null,settleTimer=0,travelDirection=1;
 const publicationReady=fetch('publications.json').then(r=>{if(!r.ok)throw Error('Bibliography unavailable');return r.json()}).then(data=>publications=data);
 publicationReady.catch(()=>{});
 const urlFor=i=>`assets/ct/slice-${String(i+1).padStart(2,'0')}.png`;
@@ -16,7 +16,7 @@ function updateView({updateHash=true}={}){
  const nextSlice=Math.round(position);
  if(slice!==nextSlice){
   slice=nextSlice;$('#scan').src=urlFor(slice);$('#scan').alt=`Axial brain CT, slice ${slice+1} of 34`;
-  $('#slice-count').innerHTML=`I: ${slice+1} <span>(${slice+1}/34)</span>`;
+  $('#slice-count').textContent=`Image ${slice+1} / 34`;
   for(const [i,b] of [...thumbs.children].entries()){if(i===slice)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current')}
   const b=thumbs.children[slice];thumbs.scrollLeft=Math.max(0,b.offsetLeft-thumbs.offsetLeft-thumbs.clientWidth/2+b.clientWidth/2);
  }
@@ -31,12 +31,12 @@ function updateView({updateHash=true}={}){
   document.querySelectorAll('[data-experience]').forEach(b=>b.setAttribute('aria-pressed',String(currentSection==='research'&&Number(b.dataset.experience)===experienceIndex)));
   $('#research-series').hidden=currentSection!=='research';
  }
- content.style.opacity=visual.opacity;content.style.transform=`translateZ(${visual.depth}px)`;content.inert=visual.opacity<.4;
+ content.style.opacity=visual.opacity;content.style.transform=visual.depth?`translateZ(${visual.depth}px)`:"none";content.inert=visual.opacity<.4;
  if(updateHash&&location.hash!==`#${currentSection}`)history.replaceState(null,'',`#${currentSection}`);
 }
 function setTarget(n,{instant=false}={}){
  if(reader.open)return;
- entryAnimation?.cancel();entryAnimation=null;
+ clearTimeout(settleTimer);entryAnimation?.cancel();entryAnimation=null;
  target=clampPosition(n);
  if(instant||reducedMotion.matches){cancelAnimationFrame(raf);raf=0;position=target;updateView();return}
  if(!raf){lastFrame=performance.now();raf=requestAnimationFrame(tick)}
@@ -44,15 +44,31 @@ function setTarget(n,{instant=false}={}){
 function tick(time){
  if(reader.open){raf=0;return}
  const dt=Math.min(48,time-lastFrame);lastFrame=time;
- position+=(target-position)*(1-Math.exp(-dt/85));
+ position+=(target-position)*(1-Math.exp(-dt/105));
  if(Math.abs(target-position)<.001)position=target;
  updateView();raf=position===target?0:requestAnimationFrame(tick);
 }
-function freezeExploration(){cancelAnimationFrame(raf);raf=0;target=position;entryAnimation?.cancel();entryAnimation=null}
-function jumpTo(scene){
- setTarget(scene.anchor,{instant:true});
- if(!reducedMotion.matches)entryAnimation=content.animate([{opacity:0,transform:'translateZ(-90px)'},{opacity:1,transform:'translateZ(0)'}],{duration:360,easing:'cubic-bezier(.2,.7,.2,1)'});
+function freezeExploration(){clearTimeout(settleTimer);cancelAnimationFrame(raf);raf=0;target=position;entryAnimation?.cancel();entryAnimation=null}
+function settleExploration(){
+ clearTimeout(settleTimer);
+ settleTimer=setTimeout(()=>setTarget(settledPosition(target,travelDirection)),180);
+}
+async function jumpTo(scene){
+ if(reader.open)return;
+ freezeExploration();
  if(innerWidth<=760)closeSidebar();
+ if(!reducedMotion.matches&&stateKey!==scene.key){
+  const outgoing=content.animate([{opacity:getComputedStyle(content).opacity,transform:content.style.transform},{opacity:0,transform:'translateZ(-110px)'}],{duration:170,easing:'ease-in',fill:'forwards'});
+  entryAnimation=outgoing;
+  try{await outgoing.finished}catch{return}
+  if(entryAnimation!==outgoing)return;
+ }
+ setTarget(scene.anchor,{instant:true});
+ if(!reducedMotion.matches){
+  const incoming=content.animate([{opacity:0,transform:'translateZ(-75px)'},{opacity:1,transform:'none'}],{duration:320,easing:'cubic-bezier(.2,.7,.2,1)'});
+  entryAnimation=incoming;
+  incoming.finished.then(()=>{if(entryAnimation===incoming){incoming.cancel();entryAnimation=null;updateView()}},()=>{});
+ }
 }
 function navigateSection(id){const scene=scenes.find(s=>s.section===id);if(scene)jumpTo(scene)}
 function renderContent(){
@@ -61,13 +77,13 @@ function renderContent(){
   html=`<h1 id="content-title">Hi, I'm Zain.</h1><p class="description">I'm a medical student with a background in imaging research and an interest in the evolving role of technology in medicine.</p>`;
  }else if(currentSection==='research'){
   const e=experiences[experienceIndex];
-  html=`<p class="eyebrow">Research intern <span class="date">${e.shortDates}</span></p><h1 id="content-title">${e.display}</h1><p class="department">${e.department}</p><p class="description">${e.description}</p><button class="primary-button" data-open="experience">Read experience</button><div class="content-foot"><span class="mono">0${experienceIndex+1} / 03</span><span>Research & experience</span></div>`;
+  html=`<p class="eyebrow">Research intern <span class="date">${e.shortDates}</span></p><h1 id="content-title">${e.display}</h1><p class="department">${e.department}</p><p class="description">${e.description}</p><button class="primary-button" data-open="experience">Read experience</button>`;
  }else if(currentSection==='publications'){
-  html=`<p class="eyebrow">Bibliography <span class="date">2023 – 2026</span></p><h1 id="content-title">Publications<br> & abstracts</h1><p class="department">Radiology & cardiovascular research</p><p class="description">Neonatal brain MRI, image reconstruction, and cardiovascular disease. Journal articles, a case report, and conference abstracts, with complete citations.</p><button class="primary-button" data-open="publications">Read all 15 publications</button><div class="content-foot"><span>15 bibliography entries</span></div>`;
+  html=`<p class="eyebrow">2023 – 2026</p><h1 id="content-title">Publications & abstracts</h1><p class="department">Radiology & cardiovascular research</p><p class="description">Neonatal brain MRI, image reconstruction, and cardiovascular disease. Journal articles, a case report, and conference abstracts, with complete citations.</p><button class="primary-button" data-open="publications">Read all 15 publications</button>`;
  }else if(currentSection==='community'){
-  html=`<p class="eyebrow">Leadership & service</p><h1 id="content-title">Community<br> service</h1><p class="department">Pakistan & the United States</p><p class="description">Hospital fundraising, patient intake, and support for refugee families. Contributed to collective fundraising efforts exceeding $400,000 for Koohi Goth Women’s Hospital.</p><button class="primary-button" data-open="community">Explore all 9 roles</button><div class="content-foot"><span>9 organizations</span></div>`;
+  html=`<h1 id="content-title">Community service</h1><p class="department">Pakistan & the United States</p><p class="description">Hospital fundraising, patient intake, and support for refugee families. Contributed to collective fundraising efforts exceeding $400,000 for Koohi Goth Women’s Hospital.</p><button class="primary-button" data-open="community">Explore all 9 roles</button>`;
  }else{
-  html=`<p class="eyebrow">About</p><h1 id="content-title">Zain Alvi</h1><p class="department">MD candidate · Class of 2027</p><p class="description">Medical student at Meharry Medical College, with research experience in radiology and cardiovascular medicine. BS in Biology from New York Institute of Technology.</p><button class="primary-button" data-open="about">Background & education</button><div class="content-foot"><span>English · Urdu · Sindhi</span></div>`;
+  html=`<h1 id="content-title">Zain Alvi</h1><p class="department">MD candidate · Class of 2027</p><p class="description">Medical student at Meharry Medical College, with research experience in radiology and cardiovascular medicine. BS in Biology from New York Institute of Technology.</p><button class="primary-button" data-open="about">Background & education</button>`;
  }
  content.classList.toggle('intro',currentSection==='intro');
  content.innerHTML=html;content.scrollTop=0;
@@ -89,6 +105,7 @@ document.addEventListener('click',e=>{
 async function openReader(type,button,targetId){
  if(!reader.open){freezeExploration();opener=button;reader.showModal();document.body.style.overflow='hidden'}
  const titles={experience:['Research & experience',experiences[experienceIndex].institution],publications:['Bibliography','Publications & abstracts'],community:['Leadership & service','Community involvement'],about:['About','Background & education'],cv:['Curriculum vitae','Zain Alvi'],credits:['Image sources','About the CT sequence']};
+ reader.dataset.view=type;
  const [kicker,title]=titles[type];$('#reader-kicker').textContent=kicker;$('#reader-title').textContent=title;
  $('#paused-position').textContent=`Scan paused at slice ${String(slice+1).padStart(2,'0')}`;
  const body=$('#reader-body');body.scrollTop=0;
@@ -111,11 +128,17 @@ $('#close-reader').onclick=closeReader;$('#back-exploration').onclick=closeReade
 reader.addEventListener('close',()=>{document.body.style.overflow='';opener?.isConnected&&opener.focus({preventScroll:true})});
 reader.addEventListener('click',e=>{if(e.target===reader){const r=reader.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeReader()}});
 $('#previous').onclick=()=>setTarget(Math.round(target)-1);$('#next').onclick=()=>setTarget(Math.round(target)+1);
-$('#scan-slider').addEventListener('input',e=>setTarget(Number(e.target.value),{instant:true}));
+$('#scan-slider').addEventListener('input',e=>{const next=Number(e.target.value);travelDirection=Math.sign(next-position)||travelDirection;setTarget(next,{instant:true})});
+$('#scan-slider').addEventListener('change',settleExploration);
+$('#scan-slider').addEventListener('keydown',e=>{
+ if(['ArrowDown','ArrowRight','ArrowUp','ArrowLeft','Home','End'].includes(e.key)){
+  e.preventDefault();setTarget(e.key==='Home'?0:e.key==='End'?33:Math.round(target)+(['ArrowDown','ArrowRight'].includes(e.key)?1:-1));
+ }
+});
 $('#viewer').addEventListener('wheel',e=>{
  if(reader.open||e.ctrlKey)return;
  const scroller=e.target.closest('#content');if(scroller&&scroller.scrollHeight>scroller.clientHeight+2)return;
- e.preventDefault();const pixels=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1);setTarget(target+Math.max(-180,Math.min(180,pixels))/180);
+ e.preventDefault();const pixels=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1);travelDirection=Math.sign(pixels)||travelDirection;setTarget(target+Math.max(-240,Math.min(240,pixels))/240);settleExploration();
 },{passive:false});
 window.addEventListener('keydown',e=>{
  if(reader.open||e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,textarea,select,[contenteditable]'))return;
@@ -126,11 +149,12 @@ window.addEventListener('keydown',e=>{
 });
 let touch=null;
 $('.scan-figure').addEventListener('touchstart',e=>{touch={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});
-$('.scan-figure').addEventListener('touchmove',e=>{if(!touch||reader.open)return;e.preventDefault();const dx=touch.x-e.touches[0].clientX,dy=touch.y-e.touches[0].clientY;setTarget(target+(Math.abs(dx)>Math.abs(dy)?dx:dy)/100);touch={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:false});
-$('.scan-figure').addEventListener('touchend',()=>{touch=null},{passive:true});
+$('.scan-figure').addEventListener('touchmove',e=>{if(!touch||reader.open)return;e.preventDefault();const dx=touch.x-e.touches[0].clientX,dy=touch.y-e.touches[0].clientY;const delta=Math.abs(dx)>Math.abs(dy)?dx:dy;travelDirection=Math.sign(delta)||travelDirection;setTarget(target+delta/140);touch={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:false});
+$('.scan-figure').addEventListener('touchend',()=>{touch=null;settleExploration()},{passive:true});
 $('#scan').onerror=()=>{$('#image-error').hidden=false};$('#scan').onload=()=>{$('#image-error').hidden=true};$('#retry-image').onclick=()=>{$('#scan').src=urlFor(slice)+`?retry=${Date.now()}`};
 window.addEventListener('hashchange',()=>navigateSection(location.hash.slice(1)));
 $('.identity').addEventListener('click',e=>{e.preventDefault();navigateSection('intro')});
 reducedMotion.addEventListener('change',()=>{freezeExploration();position=Math.round(position);target=position;updateView()});
+window.addEventListener('resize',()=>{const mobile=innerWidth<=760;$('#toggle-sidebar').setAttribute('aria-expanded',String(mobile?$('.workspace').classList.contains('mobile-sidebar-open'):!$('.workspace').classList.contains('sidebar-collapsed')))});
 const initial=scenes.find(s=>`#${s.section}`===location.hash);position=target=initial?.anchor??scenes[0].anchor;updateView();
 for(let i=0;i<34;i++){const img=new Image();img.src=urlFor(i)}
