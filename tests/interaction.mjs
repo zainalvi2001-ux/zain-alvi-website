@@ -23,7 +23,7 @@ try{
  await page.waitForSelector('#reader .publication');assert.equal(await page.locator('#reader .publication').count(),15);
  await page.locator('#reader-body').hover();await page.mouse.wheel(0,900);await page.waitForTimeout(200);
  assert.equal(await count(),frozen);assert.ok(await page.locator('#reader-body').evaluate(e=>e.scrollTop)>0);
- await page.keyboard.press('Escape');assert.equal(await count(),frozen);assert.equal(await page.evaluate(()=>document.activeElement.textContent.trim()),'Read all 15 publications ↗');
+ await page.keyboard.press('Escape');assert.equal(await count(),frozen);assert.equal(await page.evaluate(()=>document.activeElement.textContent.trim()),'Read all 15 publications');
  await page.getByRole('link',{name:'Community service 9 organizations',exact:true}).click();await page.getByRole('button',{name:'Explore all 9 roles'}).click();assert.equal(await page.locator('#reader details').count(),9);
  await page.locator('#reader summary').first().click();assert.match(await page.locator('#reader details').first().innerText(),/400,000/);await page.getByRole('button',{name:'Close reading panel'}).click();
  await page.getByRole('link',{name:'Research & experience 3 institutions',exact:true}).click();await page.getByRole('button',{name:'Stanford School of Medicine',exact:true}).click();await page.getByRole('button',{name:'Read experience'}).click();

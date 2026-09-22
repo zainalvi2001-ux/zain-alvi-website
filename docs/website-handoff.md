@@ -2,6 +2,10 @@
 
 Working draft for a personal website supporting Zain Alvi’s radiology residency applications. Establish a convincing brain CT scrolling experience while making his research, work experience, and publications easy to review.
 
+## Control styling refinement from Faris, September 22, 2026
+
+Remove the repeated diagonal arrow decoration from text links and action buttons. Use the text and existing underline treatment to identify those actions.
+
 ## Opening view from Faris, September 22, 2026
 
 The first view is an introduction before the research sequence, using this exact copy:
