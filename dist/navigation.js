@@ -1,11 +1,11 @@
 export const scenes=[
- {key:'intro',section:'intro',start:0,end:13.5,anchor:12,label:'Zain Alvi'},
- {key:'research-0',section:'research',experience:0,start:13.5,end:16.5,anchor:15,label:'Series 01 / Vanderbilt'},
- {key:'research-1',section:'research',experience:1,start:16.5,end:19.5,anchor:18,label:'Series 02 / Stanford'},
- {key:'research-2',section:'research',experience:2,start:19.5,end:22.5,anchor:21,label:'Series 03 / Emory'},
- {key:'publications',section:'publications',start:22.5,end:26.5,anchor:24,label:'15 papers & abstracts'},
- {key:'community',section:'community',start:26.5,end:30.5,anchor:28,label:'9 organizations'},
- {key:'about',section:'about',start:30.5,end:33,anchor:32,label:'Background & education'}
+ {key:'intro',section:'intro',start:0,end:4.5,anchor:0,label:'Zain Alvi'},
+ {key:'research-0',section:'research',experience:0,start:4.5,end:9.5,anchor:7,label:'Series 01 / Vanderbilt'},
+ {key:'research-1',section:'research',experience:1,start:9.5,end:14.5,anchor:12,label:'Series 02 / Stanford'},
+ {key:'research-2',section:'research',experience:2,start:14.5,end:19.5,anchor:17,label:'Series 03 / Emory'},
+ {key:'publications',section:'publications',start:19.5,end:24.5,anchor:22,label:'15 papers & abstracts'},
+ {key:'community',section:'community',start:24.5,end:29.5,anchor:27,label:'9 organizations'},
+ {key:'about',section:'about',start:29.5,end:33,anchor:32,label:'Background & education'}
 ];
 export const clampPosition=n=>Math.max(0,Math.min(33,n));
 export const sceneAt=p=>scenes.find(s=>p<s.end)||scenes.at(-1);

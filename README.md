@@ -20,7 +20,7 @@ The [original CV](source-material/Zain%20Alvi%20Resume%20Official%20%281%29.docx
 
 ## Implementation
 
-- A continuous exploration position synchronizes the image, thumbnail, section, counter, and navigation. The opening view introduces Zain using his supplied greeting and uses slice 13; the whole sequence remains accessible in both directions.
+- A continuous exploration position synchronizes the image, thumbnail, section, counter, and navigation. The opening view introduces Zain using his supplied greeting and starts at image 1; all seven content scenes are distributed across the full 34-image sequence.
 - Research has three institution-based states. Publications, community service, and About follow as the sequence advances.
 - Native modal reading panels freeze exploration and restore focus on close. All 15 bibliography entries and nine service roles are included.
 - Mobile keeps the viewer fixed, with a collapsible study browser, thumbnails, arrow buttons, and swipes on the scan. Text recedes and fades with scroll position, with one text layer at a time and no vertical slide. Reduced-motion mode removes the depth transition.

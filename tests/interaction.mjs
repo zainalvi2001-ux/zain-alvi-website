@@ -9,14 +9,15 @@ const waitPosition=async n=>page.waitForFunction(n=>Math.abs(Number(document.que
 const checkHeading=async text=>page.waitForFunction(([source,flags])=>new RegExp(source,flags).test(document.querySelector('#content-title')?.textContent||''),[text.source,text.flags]);
 try{
  await page.goto(base);await checkHeading(/Hi, I'm Zain/);
- assert.match(await count(),/13/);
- await page.mouse.move(950,450);await page.mouse.wheel(0,240);await waitPosition(13);assert.match(await count(),/14/);
- await page.mouse.wheel(0,-240);await waitPosition(12);assert.match(await count(),/13/);
- await page.keyboard.press('ArrowRight');await waitPosition(13);assert.match(await count(),/14/);
- await page.keyboard.press('ArrowRight');await waitPosition(14);await checkHeading(/Vanderbilt/);
- await page.keyboard.press('ArrowLeft');await waitPosition(13);await checkHeading(/Hi, I'm Zain/);
- await page.getByRole('button',{name:'CT slice 22 of 34',exact:true}).click();await checkHeading(/Emory/);
- assert.equal(await page.locator('.thumbnail[aria-current]').getAttribute('data-slice'),'21');
+ assert.equal(await count(),'Image 1 / 34');
+ await page.mouse.move(950,450);await page.mouse.wheel(0,240);await waitPosition(1);assert.equal(await count(),'Image 2 / 34');
+ await page.mouse.wheel(0,-240);await waitPosition(0);assert.equal(await count(),'Image 1 / 34');
+ await page.keyboard.press('ArrowRight');await waitPosition(1);assert.equal(await count(),'Image 2 / 34');
+ await page.getByRole('button',{name:'CT slice 5 of 34',exact:true}).click();await checkHeading(/Hi, I'm Zain/);
+ await page.keyboard.press('ArrowRight');await waitPosition(5);await checkHeading(/Vanderbilt/);
+ await page.keyboard.press('ArrowLeft');await waitPosition(4);await checkHeading(/Hi, I'm Zain/);
+ await page.getByRole('button',{name:'CT slice 18 of 34',exact:true}).click();await checkHeading(/Emory/);
+ assert.equal(await page.locator('.thumbnail[aria-current]').getAttribute('data-slice'),'17');
  await page.getByRole('link',{name:'Publications 15 papers & abstracts',exact:true}).click();await checkHeading(/Publications/);
  const frozen=await count();
  await page.getByRole('button',{name:'Read all 15 publications'}).click();

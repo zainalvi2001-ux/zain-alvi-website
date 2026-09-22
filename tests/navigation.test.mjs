@@ -7,7 +7,7 @@ test('forward and backward traversal use identical positions and no accumulated 
 test('reduced motion keeps text readable and removes depth travel',()=>{for(let p=0;p<=33;p+=.125){const v=depthAt(p,true);assert.equal(v.opacity,1);assert.equal(v.depth,0)}});
 test('position boundaries remain within the actual image sequence',()=>{assert.equal(clampPosition(-5),0);assert.equal(clampPosition(100),33);assert.equal(sceneAt(33).section,'about')});
 
-test('the opening scene introduces Zain before research begins',()=>{assert.equal(scenes[0].section,'intro');assert.equal(sceneAt(12).section,'intro');assert.equal(sceneAt(14).key,'research-0');assert.deepEqual(scenes.filter(s=>s.section==='research').map(s=>s.experience),[0,1,2])});
+test('the opening scene introduces Zain before research begins',()=>{assert.equal(scenes[0].section,'intro');assert.equal(scenes[0].anchor,0);assert.equal(sceneAt(0).section,'intro');assert.equal(sceneAt(5).key,'research-0');assert.deepEqual(scenes.filter(s=>s.section==='research').map(s=>s.experience),[0,1,2])});
 
 test('partial transitions settle fully readable in either travel direction',()=>{
  for(const scene of scenes.slice(0,-1)){

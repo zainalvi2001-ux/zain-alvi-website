@@ -1,10 +1,10 @@
 import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,educationHtml,cvHtml} from './content.js?v=3';
-import {scenes,clampPosition,depthAt,settledPosition} from './navigation.js?v=4';
+import {scenes,clampPosition,depthAt,settledPosition} from './navigation.js?v=5';
 const $=s=>document.querySelector(s);
 const reader=$('#reader'),thumbs=$('#thumbnails'),content=$('#content');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const sectionLabels={intro:'Introduction',research:'Research & experience',publications:'Publications',community:'Community service',about:'About'};
-let position=12,target=12,slice=-1,stateKey='',currentSection='intro',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null,settleTimer=0,travelDirection=1;
+let position=scenes[0].anchor,target=position,slice=-1,stateKey='',currentSection='intro',experienceIndex=0,opener=null,publications=[],raf=0,lastFrame=0,entryAnimation=null,settleTimer=0,travelDirection=1;
 const publicationReady=fetch('publications.json').then(r=>{if(!r.ok)throw Error('Bibliography unavailable');return r.json()}).then(data=>publications=data);
 publicationReady.catch(()=>{});
 const urlFor=i=>`assets/ct/slice-${String(i+1).padStart(2,'0')}.png`;

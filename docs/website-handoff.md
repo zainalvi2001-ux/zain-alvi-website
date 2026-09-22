@@ -2,6 +2,10 @@
 
 Working draft for a personal website supporting Zain Alvi’s radiology residency applications. Establish a convincing brain CT scrolling experience while making his research, work experience, and publications easy to review.
 
+## Full sequence progression from Faris, September 22, 2026
+
+Start the introduction at image 1 and distribute the content throughout all 34 images. Returning to Introduction or resetting the view returns to image 1. Keep section deep links and the existing fade-through-depth transitions.
+
 ## Color and navigation refinement from Faris, September 22, 2026
 
 Restore the earlier, more vibrant navy and cyan viewer palette while retaining the improved typography and transitions. Add an explicit Introduction link at the top of the study sidebar, available in the mobile menu as well.
