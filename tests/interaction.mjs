@@ -30,12 +30,12 @@ try{
  await page.getByRole('link',{name:'Research & experience 3 institutions',exact:true}).click();await page.getByRole('button',{name:'Stanford School of Medicine',exact:true}).click();await page.getByRole('button',{name:'Read experience'}).click();
  await page.locator('[data-publication="pub-2"]').click();await page.waitForSelector('#pub-2');await page.waitForFunction(()=>document.querySelector('#reader-body').scrollTop>0);assert.equal(await page.locator('#reader .publication').count(),15);assert.ok(await page.locator('#reader-body').evaluate(e=>e.scrollTop)>0);await page.keyboard.press('Escape');await checkHeading(/Stanford/);
  await page.getByRole('button',{name:'View CV'}).click();await page.waitForSelector('[data-print]');assert.equal(await page.locator('#reader .publication').count(),15);assert.equal(await page.locator('#reader .service-item').count(),9);await page.keyboard.press('Escape');
- await page.goto(base+'/#about');await checkHeading(/Zain Alvi/);
+ await page.goto(base+'/#about');await checkHeading(/About Me/);
  await page.goto(base+'/#publications');await checkHeading(/Publications/);
  await page.setViewportSize({width:390,height:844});
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  await page.getByRole('button',{name:'Read all 15 publications'}).click();await page.waitForSelector('#reader .publication');assert.ok(await page.locator('#reader').evaluate(e=>e.getBoundingClientRect().right<=innerWidth));await page.keyboard.press('Escape');
- await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'Toggle study browser',exact:true}).click();await page.getByRole('link',{name:'About Background & education',exact:true}).click();await checkHeading(/Zain Alvi/);
+ await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'Toggle study browser',exact:true}).click();await page.getByRole('link',{name:'About Background & interests',exact:true}).click();await checkHeading(/About Me/);
  await page.getByRole('button',{name:'CT slice 1 of 34',exact:true}).click();assert.equal(await page.getByRole('button',{name:'Previous CT slice',exact:true}).isDisabled(),true);
  await page.getByRole('button',{name:'CT slice 34 of 34',exact:true}).click();assert.equal(await page.getByRole('button',{name:'Next CT slice',exact:true}).isDisabled(),true);
  await page.setViewportSize({width:320,height:640});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

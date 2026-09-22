@@ -1,5 +1,5 @@
-import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,educationHtml,cvHtml} from './content.js?v=3';
-import {scenes,clampPosition,depthAt,settledPosition} from './navigation.js?v=5';
+import {experiences,escapeHtml,publicationHtml,experienceHtml,servicesHtml,aboutSummary,aboutHtml,cvHtml} from './content.js?v=4';
+import {scenes,clampPosition,depthAt,settledPosition} from './navigation.js?v=6';
 const $=s=>document.querySelector(s);
 const reader=$('#reader'),thumbs=$('#thumbnails'),content=$('#content');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -83,7 +83,7 @@ function renderContent(){
  }else if(currentSection==='community'){
   html=`<h1 id="content-title">Community service</h1><p class="department">Pakistan & the United States</p><p class="description">Hospital fundraising, patient intake, and support for refugee families. Contributed to collective fundraising efforts exceeding $400,000 for Koohi Goth Women’s Hospital.</p><button class="primary-button" data-open="community">Explore all 9 roles</button>`;
  }else{
-  html=`<h1 id="content-title">Zain Alvi</h1><p class="department">MD candidate · Class of 2027</p><p class="description">Medical student at Meharry Medical College, with research experience in radiology and cardiovascular medicine. BS in Biology from New York Institute of Technology.</p><button class="primary-button" data-open="about">Background & education</button>`;
+  html=`<h1 id="content-title">About Me</h1><p class="department">MD candidate · Meharry Medical College</p><p class="description">${aboutSummary}</p><button class="primary-button" data-open="about">Read about me</button>`;
  }
  content.classList.toggle('intro',currentSection==='intro');
  content.innerHTML=html;content.scrollTop=0;
@@ -104,7 +104,7 @@ document.addEventListener('click',e=>{
 });
 async function openReader(type,button,targetId){
  if(!reader.open){freezeExploration();opener=button;reader.showModal();document.body.style.overflow='hidden'}
- const titles={experience:['Research & experience',experiences[experienceIndex].institution],publications:['Bibliography','Publications & abstracts'],community:['Leadership & service','Community involvement'],about:['About','Background & education'],cv:['Curriculum vitae','Zain Alvi'],credits:['Image sources','About the CT sequence']};
+ const titles={experience:['Research & experience',experiences[experienceIndex].institution],publications:['Bibliography','Publications & abstracts'],community:['Leadership & service','Community involvement'],about:['Zain Alvi','About Me'],cv:['Curriculum vitae','Zain Alvi'],credits:['Image sources','About the CT sequence']};
  reader.dataset.view=type;
  const [kicker,title]=titles[type];$('#reader-kicker').textContent=kicker;$('#reader-title').textContent=title;
  $('#paused-position').textContent=`Scan paused at slice ${String(slice+1).padStart(2,'0')}`;
@@ -117,7 +117,7 @@ async function openReader(type,button,targetId){
  if(type==='experience')body.innerHTML=experienceHtml(experiences[experienceIndex],publications);
  if(type==='publications')body.innerHTML=publications.map(publicationHtml).join('');
  if(type==='community')body.innerHTML=`<p class="lead">Hospital fundraising, community clinics, and support for families in Pakistan and the United States.</p>${servicesHtml()}`;
- if(type==='about')body.innerHTML=`<p class="lead">Zain Alvi is a medical student at Meharry Medical College, class of 2027.</p><section><h3>Education</h3>${educationHtml}</section><section><h3>Research experience</h3><p>His work includes head CT utilization at Vanderbilt, neonatal brain MRI at Stanford, and cardiovascular clinical research at Emory.</p></section><section><h3>Languages</h3><p>Native or bilingual proficiency in English, Urdu, and Sindhi.</p></section>`;
+ if(type==='about')body.innerHTML=aboutHtml;
  if(type==='cv')body.innerHTML=`<button class="print-button" data-print>Print / save as PDF</button>${cvHtml(publications)}`;
  if(type==='credits')body.innerHTML=`<p class="lead">34 axial CT images from the base of the skull to the top.</p><p>Images by the Department of Radiology, Uppsala University Hospital, uploaded by Mikael Häggström. The images are provided under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 public-domain dedication</a>.</p><p>The sequence preserves the source images’ numbering, orientation, and scale. These are reference images from Wikimedia Commons, not Zain’s scan. Portfolio sections are navigation states, not anatomical associations.</p><p><a href="https://commons.wikimedia.org/wiki/Category:Computed_tomography_images_of_Mikael_H%C3%A4ggstr%C3%B6m%27s_brain" target="_blank" rel="noopener noreferrer">View the original image collection</a></p>`;
  body.scrollTop=0;

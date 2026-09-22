@@ -5,7 +5,7 @@ export const scenes=[
  {key:'research-2',section:'research',experience:2,start:14.5,end:19.5,anchor:17,label:'Series 03 / Emory'},
  {key:'publications',section:'publications',start:19.5,end:24.5,anchor:22,label:'15 papers & abstracts'},
  {key:'community',section:'community',start:24.5,end:29.5,anchor:27,label:'9 organizations'},
- {key:'about',section:'about',start:29.5,end:33,anchor:32,label:'Background & education'}
+ {key:'about',section:'about',start:29.5,end:33,anchor:32,label:'Background & interests'}
 ];
 export const clampPosition=n=>Math.max(0,Math.min(33,n));
 export const sceneAt=p=>scenes.find(s=>p<s.end)||scenes.at(-1);
