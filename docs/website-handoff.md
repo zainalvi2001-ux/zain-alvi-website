@@ -2,6 +2,10 @@
 
 Working draft for a personal website supporting Zain Alvi’s radiology residency applications. Establish a convincing brain CT scrolling experience while making his research, work experience, and publications easy to review.
 
+## Color and navigation refinement from Faris, September 22, 2026
+
+Restore the earlier, more vibrant navy and cyan viewer palette while retaining the improved typography and transitions. Add an explicit Introduction link at the top of the study sidebar, available in the mobile menu as well.
+
 ## Final QA direction from Faris, September 22, 2026
 
 Make the existing site more visually appealing and readable, with restrained controls and smooth transitions. Preserve the OHIF reference, exact introduction, complete content, and removal of decorative diagonal arrows. Favor clear typography, quieter repeated metadata, and readable resting states after each transition.
